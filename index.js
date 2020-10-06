@@ -125,7 +125,9 @@ function endGame() {
 }
 
 function moveDodger(e) {
+  const code = e.which
   
+  if (keydown)
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
