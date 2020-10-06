@@ -95,7 +95,7 @@ return endGame();}
 
   // We should kick off the animation of the rock around here.
   
-  window.requestAnimationFrame(rock);
+  window.requestAnimationFrame(moveRockock);
 
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision.
