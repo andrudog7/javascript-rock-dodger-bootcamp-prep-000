@@ -127,7 +127,7 @@ function endGame() {
 function moveDodger(e) {
   const code = e.which
   
-  if (keydown)
+  if ([LEFT_ARROW, RIGHT_ARROW].indexOf(code) > -1) {
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
