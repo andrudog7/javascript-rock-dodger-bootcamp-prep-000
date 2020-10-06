@@ -113,6 +113,15 @@ return endGame();}
  */
 function endGame() {
   clearInterval(gameInterval)
+
+  ROCKS.forEach(function(rock) { rock.remove() })
+
+  document.removeEventListener('keydown', moveDodger)
+
+  START.innerHTML = 'Play again?'
+  START.style.display = 'inline'
+
+  return alert('YOU LOSE!')
 }
 
 function moveDodger(e) {
